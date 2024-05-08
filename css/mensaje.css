@@ -1,0 +1,26 @@
+@keyframes aparecer {
+    0% { opacity: 0; transform: scale(0); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  .mensaje{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+    /* Inicialmente oculto */
+    opacity: 0;
+    transform: scale(0);
+    /* Aplicación de la animación */
+    animation: aparecer 10s forwards;
+}
+.mensaje p {
+    margin: auto;
+    font-size: 40px;
+    text-align: center;
+    color: aliceblue;
+    font-family: "Dancing Script", cursive;
+    padding: 30px;
+}
